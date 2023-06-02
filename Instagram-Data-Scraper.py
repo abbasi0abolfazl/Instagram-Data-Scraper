@@ -5,8 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 import time
-from bs4 import BeautifulSoup
-import requests
+
 
 def instagram_data_scraper(username, password, target_user):
     driver = webdriver.Chrome("chromedriver.exe")
