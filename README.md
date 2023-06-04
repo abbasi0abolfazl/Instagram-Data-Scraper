@@ -31,3 +31,10 @@ Please note that the script uses Selenium to automate interaction with the Insta
 
 - Use automated login with cookies for a better user experience.
 - Avoid using hardcoded patterns in favor of CSS classes for increased flexibility and robustness.
+- Improve error handling and reporting, especially when encountering unexpected changes to the Instagram website layout.
+- Implement rate limiting or other measures to avoid overloading the Instagram servers with too many requests.
+- Implement the ability to scrape more than just the first page of posts, allowing for a more comprehensive analysis of the target user's activity.
+- Expand the range of data that can be scraped, such as comments on posts, stories, and user profile information.
+- Add support for logging in with Facebook or other social media accounts linked to the Instagram account, in addition to traditional username and password authentication.
+- Use headless mode with Selenium to improve performance and avoid opening a visible browser window.
+- Provide more advanced options for filtering and sorting the scraped data, such as by date range or post type.
