@@ -21,7 +21,7 @@ def scroll_to_bottom(driver, pause_time=2):
         last_height = new_height
         
 
-def get_liked_users(post_link, driver):
+def get_liked_users(post_link, driver, username):
     """
         This function takes a link of an Instagram post and returns a list of usernames who have liked the post.
     """
@@ -33,7 +33,7 @@ def get_liked_users(post_link, driver):
     "https://www.instagram.com/explore/",
     "https://www.instagram.com/reels/",
     "https://www.instagram.com/direct/inbox/",
-    "https://www.instagram.com/abolabbasi11/",
+    f"https://www.instagram.com/{username}/",
     "https://www.instagram.com/about/jobs/",
     "https://www.instagram.com/legal/privacy/",
     "https://www.instagram.com/legal/terms/",
@@ -137,7 +137,7 @@ def scrape_instagram_data(username, password, target_user):
 
     # Get list of users who have liked the first post
     if post_links:
-        users_who_liked_post = get_liked_users(post_links[0], driver)
+        users_who_liked_post = get_liked_users(post_links[0], driver, target_user)
     else:
         users_who_liked_post = []
 
